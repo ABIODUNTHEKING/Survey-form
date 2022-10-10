@@ -1,0 +1,57 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    background-image: url(backgound.webp);
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #title,
+  #description {
+    text-align: center;
+  }
+  
+  #survey-form {
+    background-color: #1b1b32;
+    color: white;
+    margin: 0 auto;
+  }
+  #number,
+  #name,
+  #email,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px 0;
+    outline: #1b1b32;
+    border-radius: 5px;
+  }
+  #number,
+  #name,
+  #email{
+    margin-bottom: 10px;
+  }
+  label {
+    display: block;
+  }
+  fieldset {
+    border: 0;
+  }
+  input[type="submit"] {
+    width: 70%;
+    margin-left: 15%;
+    padding: 5px;
+    background-color: #1b1b32;
+    color: white;
+    border: 2px white solid;
+  }
+  .secondError,
+  .firstError {
+    font-size: 10.5px;
+    color: white;
+  }
+  
