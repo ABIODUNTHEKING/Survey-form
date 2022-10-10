@@ -11,7 +11,7 @@
 <body>
   <h1 id="title">Survey Form</h1>
   <p id="description">Thank you for taking the time to help us improve the platform</p>
-  <form id="survey-form">
+  <form id="survey-form" method="POST" data-netlify="true">
     <fieldset>
       <label id="name-label">Name
         <input id="name" type="text" placeholder="Enter your name"/>
@@ -37,7 +37,7 @@
     </fieldset>
     <fieldset>
       <p>
-        Would you recommend freeCodeCamp to a friend?
+        Would you recommend Emmanuel to a friend?
       </p>
       <label>
         <input type="radio" name="referrer" value="button" checked /> Definitely
@@ -50,13 +50,13 @@
       </label>
     </fieldset>
     <fieldset>
-      <label>What is your favorite feature of freeCodeCamp?
+        <label>How would you rate Emmanuel?
         <select id="dropdown">
           <option value="5">Select an option</option>
-          <option value="6">Challeneges</option>
-          <option value="7">Projects</option>
-          <option value="8">Community</option>
-          <option value="9">Open Source</option>
+          <option value="6">Excellent</option>
+          <option value="7">Good</option>
+          <option value="8">Bad</option>
+          <option value="9">Worst</option>
         </select>
       </label>
     </fieldset>
@@ -71,28 +71,16 @@
         <input type="checkbox" value="Improvement" /> Back-end Projects
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Data Visualization
-      </label>
-      <label>
         <input type="checkbox" value="Improvement" /> Challenges
       </label>
       <label>
         <input type="checkbox" value="Improvement" /> Open Source Community
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Gitter help rooms
-      </label>
-      <label>
         <input type="checkbox" value="Improvement" /> Videos
       </label>
       <label>
         <input type="checkbox" value="Improvement" /> City Meetups
-      </label>
-      <label>
-        <input type="checkbox" value="Improvement" /> Wiki
-      </label>
-      <label>
-        <input type="checkbox" value="Improvement" /> Forum
       </label>
       <label>
         <input type="checkbox" value="Improvement" /> Additional Courses
