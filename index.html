@@ -14,24 +14,24 @@
   <form id="survey-form" method="POST" data-netlify="true">
     <fieldset>
       <label id="name-label">Name
-        <input id="name" type="text" placeholder="Enter your name"/>
+        <input id="name" type="text" placeholder="Enter your name" name="Name"/>
         <p class="firstError"></p>
       </label>
       <label id="email-label">Email
-        <input id="email" type="text" placeholder="Enter your email"/>
+        <input id="email" type="text" placeholder="Enter your email" name="Email"/>
         <p class="secondError"></p>
       </label>
       <label id="number-label">Age(optional)
-        <input id="number" type="number" placeholder="Age" min="10" max="99" />
+        <input id="number" type="number" placeholder="Age" name="Age"/>
       </label>
       <label>Which option best describes your current role?
         <select id="dropdown">
           <option>Select current role</option>
-          <option value="">Student</option>
-          <option value="1">Full Time Job</option>
-          <option value="2">Full Time Learner</option>
-          <option value="3">Prefer not to say</option>
-          <option value="4">other</option>
+          <option value="" name="Role">Student</option>
+          <option value="1" name="Role">Full Time Job</option>
+          <option value="2" name="Role">Full Time Learner</option>
+          <option value="3" name="Role">Prefer not to say</option>
+          <option value="4" name="Role">other</option>
         </select>
       </label>
     </fieldset>
@@ -40,23 +40,23 @@
         Would you recommend Emmanuel to a friend?
       </p>
       <label>
-        <input type="radio" name="referrer" value="button" checked /> Definitely
+        <input type="radio" name="referrer" value="button" checked/> Definitely
       </label>
       <label>
-        <input type="radio" name="referrer" value="button" /> Maybe
+        <input type="radio" name="referrer" value="button"/> Maybe
       </label>
       <label>
-        <input type="radio" name="referrer" value="button" /> Not sure
+        <input type="radio" name="referrer" value="button"/> Not sure
       </label>
     </fieldset>
     <fieldset>
         <label>How would you rate Emmanuel?
         <select id="dropdown">
-          <option value="5">Select an option</option>
-          <option value="6">Excellent</option>
-          <option value="7">Good</option>
-          <option value="8">Bad</option>
-          <option value="9">Worst</option>
+          <option value="5" name="Rate">Select an option</option>
+          <option value="6" name="Rate">Excellent</option>
+          <option value="7" name="Rate">Good</option>
+          <option value="8" name="Rate">Bad</option>
+          <option value="9" name="Rate">Worst</option>
         </select>
       </label>
     </fieldset>
@@ -65,30 +65,30 @@
         What would you like to see improved? (Check all that apply)
       </p>
       <label>
-        <input type="checkbox" value="Improvement" /> Front-end Projects
+        <input type="checkbox" value="Improvement" name="Improvement"/> Front-end Projects
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Back-end Projects
+        <input type="checkbox" value="Improvement" name="Improvement"/> Back-end Projects
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Challenges
+        <input type="checkbox" value="Improvement" name="Improvement"/> Challenges
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Open Source Community
+        <input type="checkbox" value="Improvement" name="Improvement"/> Open Source Community
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Videos
+        <input type="checkbox" value="Improvement" name="Improvement"/> Videos
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> City Meetups
+        <input type="checkbox" value="Improvement" name="Improvement"/> City Meetups
       </label>
       <label>
-        <input type="checkbox" value="Improvement" /> Additional Courses
+        <input type="checkbox" value="Improvement" name="Improvement"/> Additional Courses
       </label>
     </fieldset>
     <fieldset>
       <label>Any comments or suggestions?
-        <textarea rows="5" cols="50" placeholder="Enter your comment here...."></textarea>
+        <textarea rows="5" cols="50" placeholder="Enter your comment here...." name="COmment"></textarea>
       </label>
     </fieldset>
     <input type="submit" name="Submit" id="submit">
