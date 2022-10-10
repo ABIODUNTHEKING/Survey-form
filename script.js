@@ -21,7 +21,7 @@ btn.addEventListener("click", (e)=>{
         secondError.innerHTML = "Please fill in your email"
     }
 
-    else if(!(secondInput.value.match(pattern))){
+    else if(secondInput.value.match(pattern) == false){
         e.preventDefault();
             secondInput.style.border = "1px solid black"
             secondError.innerHTML = "Please fill in the right email"       
